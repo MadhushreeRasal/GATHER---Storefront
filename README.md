@@ -4,7 +4,7 @@
 
 GATHER is a seller-side product showcase designed to bring products together in one organized, visually appealing storefront. Sellers can add product details, display product cards, manage their product listings, and update stock status through a simple interface.
 
-**Live Demo:** [GATHER — Storefront](https://madhushreerasal.github.io/GATHER---Storefront/)
+**Live Demo:** [GATHER Storefront](https://madhushreerasal.github.io/GATHER---Storefront/)
 
 ## Features
 
