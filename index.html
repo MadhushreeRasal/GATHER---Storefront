@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Product details</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	</head>
+	<body>
+			
+		<nav id="nav" class="bg-black text-white text-center px-4 py-2 block w-full px-4 py-2 mx-auto shadow-md rounded-md lg:px-8 lg:py-1">
+		  <div class="container flex flex-wrap items-center justify-between mx-auto">
+			<a href="#" class="mr-4 block cursor-pointer py-1.5 pr-5 text-base font-semibold">
+			  GATHER
+			</a>
+		 
+			<div class="hidden lg:block">
+			  <ul class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+				<li class="m-2"><a href="# ">About us</a></li>
+				<li class="m-2"><a href="# ">Buy</a></li>
+				<li class="m-2"><a href="# ">Sell</a></li>
+				<li class="m-2"><a href="# ">Help Center</a></li>
+				<li class="m-2"><a href="# ">Other Services</a></li>
+			  </ul>
+			</div>
+			
+			<div class="w-fit z-[6] ml-auto lg:hidden">
+				<input type="checkbox" name="checkbox" value="checkbox" id="checkbox" class="hidden peer">
+				<label for="checkbox" class="lg:hidden p-3">
+					<i class="ri-menu-fill "></i>
+				</label>
+				
+				<div class="peer-checked:block h-screen absolute right-0 left-0 hidden text-white bg-teal-900 py-3 px-2 w-full border-t-2 border-white">
+			  <ul class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+				<li class="m-2"><a href="# ">About us</a></li>
+				<li class="m-2"><a href="# ">Buy</a></li>
+				<li class="m-2"><a href="# ">Sell</a></li>
+				<li class="m-2"><a href="# ">Help Center</a></li>
+				<li class="m-2"><a href="# ">Other Services</a></li>
+			  </ul>
+				</div>
+			</div>
+		  </div>
+		</nav>
+		
+		<main>
+			<section class="bg-[url(https://png.pngtree.com/thumb_back/fh260/background/20250808/pngtree-lavender-sprigs-in-purple-mug-on-marble-surface-with-soft-lighting-image_17693272.webp)] bg-cover bg-violet[50] bg-center p-15 text-center h-screen">
+				<p class="md:text-5xl font-bold m-5 lg:mt-[20vh] md:mt-[10vh] text-3xl text-shadow-lg/20 text-shadow-violet-100 lg:w-[60%] tracking-wider text-center">You've got the products. We've got the gallery.</p>
+				<p class="md:text-3xl font-bold  my-8 text-2xl text-shadow-lg/20 text-shadow-violet-100 lg:w-[60%] md:tracking-wider text-center">A storefront for everything worth showing off.</p>
+				<hr class="w-[50%] ml-5">
+				<p class="md:text-2xl font-bold  my-8 text-xl text-shadow-lg/20 text-shadow-violet-100 lg:w-[60%] md:tracking-wide text-center">We can't fix shoppers impulse, so we supply it.</p>
+			</section>
+			<section class="bg-yellow-50 p-5 md:flex md:justify-center-safe md:items-center">
+				<section class="bg-yellow-50 lg:w[40%] p-5">
+					<p class="text-3xl mb-3 text-violet-950 font-semibold tracking-wide">Every collection has a story. Give yours a place to shine.</p>
+					<p class="m-3 p-5">Whether you're showcasing everyday essentials, unique finds, or products you've put your heart into, GATHER gives you a space to bring them all together.<br>Create your own product gallery, add images and descriptions, organize your items, and keep your collection looking the way you want. No more scattered product details or endless searching—just your products, presented in one place.<br>Because every product deserves to be seen, every collection deserves to feel complete, and great finds deserve to be discovered.</p>
+					<hr>
+					<p class="text-xl mt-5 mb-2 text-violet-950 tracking-wide font-semibold">You've got the goods. Make them seen.</p>
+				</section>
+				<section class="w-[275px] p-3 rounded-md mx-auto md:w-[40%] shrink-0 lg:m-5">
+					<p class="font-semibold m-4 bg-violet-100 text-2xl text-center">Add product details here</p>
+					<!-- Product details form -->
+					<form class=" border-5 border-double border-violet-950 p-3 rounded-md mx-auto">
+					
+						<label for="pr_id">Product Id :</label><br>
+						<input type="text" class=" border-violet-900 border rounded-md px-5 py-1 mb-4 w-full bg-violet-50" id="pr_id" placeholder="342" required />
+						
+						<br>
+						
+						<label for="pr_category">Product Category:</label><br>
+						<input type="text" class="bg-violet-50 border-violet-900 border rounded-md px-5 py-1 mb-4 w-full" id="pr_category" placeholder="grocery/electronic/accessories..." required />
+						
+						<br>
+						
+						<label for="pr_name">Product Name:</label><br>
+						<input type="text" class="bg-violet-50 border-violet-900 border rounded-md px-5 py-1 mb-4 w-full" id="pr_name" placeholder="Hair clips/ phone/ ..." required />
+						
+						<br>
+						
+						<label for="pr_img">Product Image:</label><br>
+						<input type="url" class="bg-violet-50 border-violet-900 border rounded-md px-5 py-1 mb-4 w-full" id="pr_img" placeholder="url" required />
+						
+						<br>
+						
+						<label for="pr_des">Product Description:</label><br>
+						<input type="text" class="bg-violet-50 border-violet-900 border rounded-md px-5 py-1 mb-4 w-full" id="pr_des" placeholder="Description" required />
+						
+						<br>
+						
+						<label for="pr_price">Product price:</label><br>
+						<input type="number" class="bg-violet-50 border-violet-900 border rounded-md px-5 py-1 mb-4 w-full" id="pr_price" placeholder="300" required />
+						
+						<div class="lg:flex lg:justify-center-safe lg:flex-row flex items-center flex-col">
+							<button type="button" onclick="card('addf')" class="rounded-lg bg-black text-white m-4 py-2 px-5">Add Product at FIRST </button>
+							<button type="button" onclick="card('addl')" class="rounded-lg bg-black text-white m-4 py-2 px-5">Add Product at LAST</button>
+						</div>
+					</form>
+				</section>
+			</section>
+		
+			<section class="bg-[url(https://i.pinimg.com/736x/0f/ea/96/0fea96fc4795cbf1f5e760691c9b8dca.jpg)] bg-cover bg-green[50] bg-center p-5 bg-violet-50">
+				<p class="m-4 font-semibold text-center">Fill in the product details form above to add products.</p>
+				
+				<section class="flex justify-center-safe items-center overflow-auto shrink-0 p-5" id="cards">
+				
+				
+				</section>
+				
+				<div class="flex justify-around flex-wrap items-center align-center mx-auto pb-5">
+					<button type="button" onclick="card('removel')" class="rounded-lg bg-black text-yellow-50 m-4 py-2 px-5 ">Remove Last Product </button>
+					<button type="button" onclick="card('removef')" class="rounded-lg bg-black text-yellow-50 m-4 py-2 px-5 ">Remove First Product</button>
+				</div>
+			</section>
+		</main>
+		<footer class="bg-black text-white text-center p-2">
+			&copy; Stress Buddy - 2026. All rights reserved.
+		</footer>
+		<script src="index.js"></script>
+	</body>
+</html>
